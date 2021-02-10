@@ -1,0 +1,54 @@
+ <!DOCTYPE html>
+<html>
+<title>Grid</title>
+<body>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: auto auto auto;
+        }
+
+        .header{
+            background-color: turquoise;
+            font-size: 40px;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            padding: 30px;
+        }
+
+        .main{
+            background-color: yellow;
+            font-size: 40px;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            padding: 30px;
+        }
+
+        .sidebar{
+            background-color: blue;
+            font-size: 40px;
+            text-align: center;
+            grid-column-start: 3;
+            grid-column-end: 4;
+            padding: 30px;
+        }
+
+        .footer{
+            background-color: blueviolet;
+            font-size: 40px;
+            text-align: center;
+            grid-column-start: 1;
+            grid-column-end: 4;
+            padding: 30px;
+        }
+    </style>
+    <div class="container">
+        <div class="header">header</div>
+        <div class="main">main</div>
+        <div class="sidebar">sidebar</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html> 
